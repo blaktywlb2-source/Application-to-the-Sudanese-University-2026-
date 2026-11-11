@@ -1,0 +1,412 @@
+نسخةOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10243a">
+<title>التقديم للجامعة | بوابة التقديم الإلكتروني</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+body {
+  background: #f3f5f9;
+  color: #182536;
+}
+
+header {
+  background: linear-gradient(135deg,#10243a,#1c3855);
+  color: white;
+  padding: 25px 18px 45px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: bold;
+  color: #e5c477;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+header p {
+  color: #d4dfeb;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.container {
+  max-width: 750px;
+  margin: -25px auto 35px;
+  padding: 0 15px;
+}
+
+.form-card {
+  background: white;
+  padding: 25px;
+  border-radius: 17px;
+  box-shadow: 0 7px 30px rgba(0,0,0,.07);
+}
+
+.form-title {
+  text-align: center;
+  font-size: 21px;
+  margin-bottom: 8px;
+  color: #10243a;
+}
+
+.form-subtitle {
+  text-align: center;
+  color: #8993a1;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.section-title {
+  color: #b18b42;
+  font-weight: bold;
+  margin: 24px 0 15px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
+}
+
+.field {
+  margin-bottom: 17px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input, select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dce1e8;
+  border-radius: 9px;
+  outline: none;
+  background: #fafbfd;
+  font-size: 14px;
+  color: #263548;
+}
+
+input:focus, select:focus {
+  border-color: #b18b42;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(177,139,66,.1);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+button {
+  width: 100%;
+  border: none;
+  padding: 16px;
+  border-radius: 10px;
+  background: linear-gradient(135deg,#10243a,#23496c);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+button:active {
+  transform: scale(.99);
+}
+
+.note {
+  background: #f9f6ef;
+  padding: 13px;
+  border-radius: 8px;
+  color: #776039;
+  font-size: 12px;
+  line-height: 1.8;
+  margin-top: 17px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #9299a4;
+  font-size: 12px;
+}
+
+@media(max-width:550px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .form-card {
+    padding: 19px;
+  }
+
+  header h1 {
+    font-size: 21px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">التقديم للجامعة</div>
+  <h1>بوابة التقديم الإلكتروني للجامعات</h1>
+  <p>
+    مستقبلك الجامعي يبدأ من هنا<br>
+    أدخل بياناتك واختر التخصص والجامعة المناسبة لك
+  </p>
+</header>
+
+<div class="container">
+<div class="form-card">
+
+<h2 class="form-title">استمارة التقديم الإلكتروني</h2>
+<p class="form-subtitle">يرجى التأكد من صحة جميع البيانات</p>
+
+<form id="applicationForm">
+
+<div class="section-title">البيانات الشخصية</div>
+
+<div class="field">
+<label>الاسم الرباعي *</label>
+<input type="text" id="fullName" placeholder="أدخل الاسم الرباعي" required>
+</div>
+
+<div class="grid">
+<div class="field">
+<label>الرقم الوطني *</label>
+<input type="text" id="nationalId" placeholder="الرقم الوطني" required>
+</div>
+
+<div class="field">
+<label>النسبة المئوية *</label>
+<input type="number" id="percentage" placeholder="مثال: 57" min="0" max="100" step="0.01" required>
+</div>
+</div>
+
+<div class="grid">
+<div class="field">
+<label>نوع المؤهل *</label>
+<select id="degree" required>
+<option value="">اختر المؤهل</option>
+<option>بكالوريوس</option>
+<option>دبلوم</option>
+</select>
+</div>
+
+<div class="field">
+<label>عام الشهادة *</label>
+<select id="year" required>
+<option value="">اختر العام</option>
+</select>
+</div>
+</div>
+
+<div class="field">
+<label>رقم هاتف نشط *</label>
+<input type="tel" id="phone" placeholder="أدخل رقم الهاتف مع رمز الدولة" required>
+</div>
+
+<div class="section-title">بيانات التخصص</div>
+
+<div class="field">
+<label>المجال الدراسي *</label>
+<select id="category" required>
+<option value="">اختر المجال</option>
+<option value="medical">التخصصات الطبية</option>
+<option value="computer">التخصصات الحاسوبية والتقنية</option>
+</select>
+</div>
+
+<div class="field">
+<label>التخصص المطلوب *</label>
+<select id="specialty" required disabled>
+<option value="">اختر المجال أولاً</option>
+</select>
+</div>
+
+<div class="section-title">اختيار الجامعة</div>
+
+<div class="field">
+<label>الجامعة المطلوبة *</label>
+<select id="university" required>
+<option value="">اختر الجامعة</option>
+</select>
+</div>
+
+<div class="note">
+تنبيه: إرسال الاستمارة لا يعني القبول الجامعي النهائي.
+يخضع القبول لشروط الجامعة واللوائح الرسمية.
+</div>
+
+<button type="submit">إرسال طلب التقديم</button>
+
+</form>
+</div>
+</div>
+
+<footer>
+جميع الحقوق محفوظة © 2026 | بوابة التقديم للجامعة
+</footer>
+
+<script>
+const universities = [
+"السودان المفتوحة",
+"جامعة المشرق",
+"جامعة أفريقيا العلمية",
+"جامعة النيلين",
+"جامعة الرباط الوطني",
+"جامعة بخت الرضا",
+"جامعة بحري",
+"الجامعة الوطنية",
+"جامعة العلوم والتقانة",
+"جامعة الجزيرة",
+"جامعة بورتسودان",
+"الكليات الخاصة",
+"جامعة الرازي",
+"جامعة ابن سينا"
+];
+
+const specialties = {
+medical: [
+"الطب البشري",
+"طب الأسنان",
+"الصيدلة",
+"التمريض",
+"المختبرات الطبية",
+"الأشعة والتصوير الطبي",
+"العلاج الطبيعي",
+"التخدير",
+"القبالة",
+"الصحة العامة",
+"صحة البيئة",
+"التغذية العلاجية",
+"تقنيات الأسنان",
+"البصريات",
+"العلاج التنفسي",
+"الطب البيطري",
+"الصحة النفسية"
+],
+
+computer: [
+"علوم الحاسوب",
+"تقنية المعلومات",
+"هندسة البرمجيات",
+"الأمن السيبراني",
+"الذكاء الاصطناعي",
+"علم البيانات",
+"نظم المعلومات",
+"شبكات الحاسوب",
+"هندسة الحاسوب",
+"الحوسبة السحابية",
+"تطوير التطبيقات",
+"تطوير المواقع",
+"قواعد البيانات",
+"الوسائط المتعددة",
+"إنترنت الأشياء",
+"الروبوتات"
+]
+};
+
+// تعبئة السنوات
+const yearSelect = document.getElementById("year");
+
+for(let y = 2026; y >= 1980; y--) {
+  const option = document.createElement("option");
+  option.value = y;
+  option.textContent = y;
+  yearSelect.appendChild(option);
+}
+
+// تعبئة الجامعات
+const universitySelect = document.getElementById("university");
+
+universities.forEach(name => {
+  const option = document.createElement("option");
+  option.value = name;
+  option.textContent = name;
+  universitySelect.appendChild(option);
+});
+
+// تغيير التخصصات حسب المجال
+const category = document.getElementById("category");
+const specialty = document.getElementById("specialty");
+
+category.addEventListener("change", function() {
+  specialty.innerHTML = '<option value="">اختر التخصص</option>';
+
+  const list = specialties[this.value] || [];
+
+  list.forEach(name => {
+    const option = document.createElement("option");
+    option.value = name;
+    option.textContent = name;
+    specialty.appendChild(option);
+  });
+
+  specialty.disabled = list.length === 0;
+});
+
+// إرسال الاستمارة
+document.getElementById("applicationForm")
+.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("fullName").value.trim();
+  const nationalId = document.getElementById("nationalId").value.trim();
+  const percentage = Number(document.getElementById("percentage").value);
+
+  if(name.split(/\s+/).length !== 4) {
+    alert("يرجى إدخال الاسم رباعياً.");
+    return;
+  }
+
+  if(!/^\d+$/.test(nationalId)) {
+    alert("الرقم الوطني يجب أن يحتوي على أرقام فقط.");
+    return;
+  }
+
+  if(percentage < 0 || percentage > 100) {
+    alert("النسبة يجب أن تكون بين 0 و100.");
+    return;
+  }
+
+  const application = {
+    fullName: name,
+    nationalId: nationalId,
+    percentage: percentage,
+    degree: document.getElementById("degree").value,
+    year: document.getElementById("year").value,
+    phone: document.getElementById("phone").value.trim(),
+    category: category.value,
+    specialty: specialty.value,
+    university: universitySelect.value,
+    createdAt: new Date().toISOString()
+  };
+
+  console.log("طلب التقديم:", application);
+
+  alert("تم التحقق من البيانات بنجاح. هذه نسخة تجريبية؛ لم يتم إرسال الطلب أو حفظه بعد.");
+});
+</script>
+
+</body>
+</html>
